@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Food Education Game - Do U Food?</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen:400,700" type="text/css">
+</head>
+
+<body>
+
+  <div class="heading">
+    <h1>Do U Food?</h1>
+    <div class="instructions">
+      <p>Quelle est la saison en France de chacun des fruits ou légumes proposés ? Clique sur la réponse de ton choix (plusieurs réponses peuvent être acceptées pour certains fruits et légumes). Tu recevras 1, 2 ou 3 points selon le niveau de difficulté.</p>
+      <button>Start</button>
+    </div>
+  </div>
+
+  <div class="gameDetails">
+    <div class="timer">00:00</div>
+    <div id="Score">xx points</div>
+  </div>
+
+  <div class="foodGameContent">
+
+    <div class="vegetableImage">
+      <img src="images/Fruits&Vegetables/ail.jpg" alt="ail">
+      <p class="vegetableName">Ail</p>
+    </div>
+
+    <div class="seasonsOptions">
+      <div class="été">
+        <img src="images/Seasons/ete.png" alt="été">
+        <p class="seasonName">été</p>
+      </div>
+      <div class="automne">
+        <img src="images/Seasons/automne.png" alt="été">
+        <p class="seasonName">automne</p>
+      </div>
+      <div class="hiver">
+        <img src="images/Seasons/hiver.png" alt="été">
+        <p class="seasonName">hiver</p>
+      </div>
+      <div class="printemps">
+        <img src="images/Seasons/printemps.png" alt="été">
+        <p class="seasonName">printemps</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="foodLibrary.js"></script>
+<script src="doUFood.js"></script>
+
+</html>

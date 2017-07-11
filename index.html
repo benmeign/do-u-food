@@ -12,40 +12,43 @@
 
 <body>
 
-  <div class="heading">
-    <h1>Do U Food?</h1>
-    <div class="instructions">
-      <p>Quelle est la saison en France de chacun des fruits ou légumes proposés ? Clique sur la réponse de ton choix (plusieurs réponses peuvent être acceptées pour certains fruits et légumes). Tu recevras 1, 2 ou 3 points selon le niveau de difficulté.</p>
-      <button>Start</button>
-    </div>
-  </div>
+  <header class="row container-fluid">
+      <h1 class="game-title">Do You Food?</h1>
+      <div class="instructions">
+        <div class="col-sm-8 game-description">
+          <p>Quelle est la saison en France de chacun des fruits ou légumes proposés ?</p>
+          <p>Clique sur la réponse de ton choix (plusieurs réponses peuvent être acceptées pour certains fruits et légumes).</p>
+        </div>
+        <button class="btn col-sm-3 start-button">Démarrer</button>
+      </div>
+  </header>
 
-  <div class="gameDetails">
-    <div class="timer">00:00</div>
-    <div id="Score">xx points</div>
+  <div class="row gameDetails">
+    <div class="timer col-sm-6">00:00</div>
+    <div id="score col-sm-6">xx points</div>
   </div>
 
   <div class="foodGameContent">
 
-    <div class="vegetableImage">
+    <div class="vegetableImage col-sm-3">
       <img src="images/Fruits&Vegetables/ail.jpg" alt="ail">
       <p class="vegetableName">Ail</p>
     </div>
 
-    <div class="seasonsOptions">
-      <div class="été">
+    <div class="col-sm-9 seasons">
+      <div class="summer seasonsOptions col-sm-2">
         <img src="images/Seasons/ete.png" alt="été">
         <p class="seasonName">été</p>
       </div>
-      <div class="automne">
+      <div class="automn seasonsOptions col-sm-2">
         <img src="images/Seasons/automne.png" alt="été">
         <p class="seasonName">automne</p>
       </div>
-      <div class="hiver">
+      <div class="winter seasonsOptions col-sm-2">
         <img src="images/Seasons/hiver.png" alt="été">
         <p class="seasonName">hiver</p>
       </div>
-      <div class="printemps">
+      <div class="spring seasonsOptions col-sm-2">
         <img src="images/Seasons/printemps.png" alt="été">
         <p class="seasonName">printemps</p>
       </div>

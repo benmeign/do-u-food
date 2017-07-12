@@ -11,8 +11,16 @@ header {
   padding-:20px;
 }
 
+.btn{
+  margin-bottom: 15px;
+}
+
 .game-title{
   padding-left: 15px;
+}
+
+.start-button{
+  margin-bottom: 20px;
 }
 
 .instructions {
@@ -22,16 +30,21 @@ header {
 }
 
 .game-details{
-  margin: 10px 20px 10px 20px;
-  padding-left: 15px;
-  padding-right: 15px;
-  display: float;
+  padding: 10px 20px 10px 20px;
+}
+
+.score {
+  text-align: right;
 }
 
 img{
   width: 90px;
 }
 
-.seasonsOptions{
+.seasonsOptions, .vegetableImage{
+  text-align: center;
+}
+
+footer{
   text-align: center;
 }

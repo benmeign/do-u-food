@@ -16,45 +16,58 @@
       <h1 class="game-title">Do You Food?</h1>
       <div class="instructions">
         <div class="col-sm-8 game-description">
-          <p>Quelle est la saison en France de chacun des fruits ou légumes proposés ?</p>
+          <p>Quelle est la saison <b>en France</b> de chacun des fruits ou légumes proposés ?</p>
           <p>Clique sur la réponse de ton choix (plusieurs réponses peuvent être acceptées pour certains fruits et légumes).</p>
+          <p>L'objectif est de répondre à un maximum de questions en 2 minutes.</p>
+          <p>Vous recevrez un nombre de points en fonction de la difficulté de la question et la pertinence de la réponse.</p>
         </div>
         <button class="btn col-sm-3 start-button">Démarrer</button>
       </div>
   </header>
 
-  <div class="row gameDetails">
-    <div class="timer col-sm-6">00:00</div>
-    <div id="score col-sm-6">xx points</div>
-  </div>
-
-  <div class="foodGameContent">
-
-    <div class="vegetableImage col-sm-3">
-      <img src="images/Fruits&Vegetables/ail.jpg" alt="ail">
-      <p class="vegetableName">Ail</p>
+  <div class="container">
+    <div class="row gameDetails">
+      <div class="timer col-xs-6">00:00</div>
+      <div id="score col-xs-6">xx points</div>
     </div>
 
-    <div class="col-sm-9 seasons">
-      <div class="summer seasonsOptions col-sm-2">
+    <div class="row foodGameContent vegetableImage">
+      <div class=" col-sm-12">
+        <img src="images/Fruits&Vegetables/ail.jpg" alt="ail">
+        <p class="vegetableName">Ail</p>
+      </div>
+    </div>
+
+    <div class="row nextButton">
+      <div class="col-xs-4"></div>
+      <button class="btn col-xs-4 next-button">Suivant</button>
+      <div class="col-xs-4"></div>
+    </div>
+
+    <div class="row seasons">
+      <div class="summer seasonsOptions col-md-offset-2 col-md-4 col-xs-6">
         <img src="images/Seasons/ete.png" alt="été">
         <p class="seasonName">été</p>
       </div>
-      <div class="automn seasonsOptions col-sm-2">
+      <div class="automn seasonsOptions col-xs-6 col-md-4">
         <img src="images/Seasons/automne.png" alt="été">
         <p class="seasonName">automne</p>
       </div>
-      <div class="winter seasonsOptions col-sm-2">
+      <div class="winter seasonsOptions col-md-offset-2 col-md-4 col-xs-6">
         <img src="images/Seasons/hiver.png" alt="été">
         <p class="seasonName">hiver</p>
       </div>
-      <div class="spring seasonsOptions col-sm-2">
+      <div class="spring seasonsOptions col-xs-6 col-md-4">
         <img src="images/Seasons/printemps.png" alt="été">
         <p class="seasonName">printemps</p>
       </div>
     </div>
-
   </div>
+
+  <footer class="row">
+    <p>Mentions légales</p>
+    <p>Mode de calcul du score</p>
+  </footer>
 
 </body>
 

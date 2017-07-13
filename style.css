@@ -30,8 +30,23 @@ header {
   background-color: #FEFE84;
 }
 
+.container{
+  display: none;
+}
+
 .game-details{
   padding: 10px 20px 10px 20px;
+}
+
+.foodGamePlayground{
+  position:relative;
+}
+
+.answer{
+  position: absolute;
+  width: 100%;
+  background-color: #FEFE84;
+  opacity: 0.6;
 }
 
 .score {

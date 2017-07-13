@@ -26,48 +26,56 @@
   </header>
 
   <div class="container">
+
     <div class="row gameDetails">
       <div class="timer col-xs-6">00:00</div>
-      <div id="score col-xs-6">xx points</div>
+      <div class="score col-xs-6">
+        <span>Score : </span>
+        <span class="points">0</span>
     </div>
 
-    <div class="row foodGameContent">
-      <div class="col-sm-12">
-        <img id="vegetableImage" src="images/allVeggies.jpg" alt="ail">
-        <p id="vegetableName">Légume</p>
-      </div>
-    </div>
-
-    <div class="row seasons">
-      <div class="seasonsOptions col-md-offset-2 col-md-4 col-xs-6" val="summer">
-        <img src="images/Seasons/ete.png" alt="été">
-        <p class="seasonName">été</p>
-      </div>
-      <div class="seasonsOptions col-xs-6 col-md-4" val="automn">
-        <img src="images/Seasons/automne.png" alt="automne">
-        <p class="seasonName">automne</p>
-      </div>
-      <div class="seasonsOptions col-md-offset-2 col-md-4 col-xs-6" val="winter">
-        <img src="images/Seasons/hiver.png" alt="hiver">
-        <p class="seasonName">hiver</p>
-      </div>
-      <div class="seasonsOptions col-xs-6 col-md-4" val="spring">
-        <img src="images/Seasons/printemps.png" alt="printemps">
-        <p class="seasonName">printemps</p>
-      </div>
-    </div>
-
-    <div class="row answer">
-
-      <div class=" answer col-xs-9">
-        <p>L'ail est un légume d été, printemps, automne, hiver</p>
-        <p>A consommer sans modération les mois suivants :</p>
-        <div class="month-title january"></div>
+    <div class="foodGamePlayground">
+      <div class="row foodGameContent">
+        <div class="col-sm-12">
+          <img id="vegetableImage" src="images/allVeggies.jpg" alt="ail">
+          <p id="vegetableName">Légume</p>
+        </div>
       </div>
 
-      <div class="nextButton col-xs-3">
-        <button class="btn next-button">Suivant</button>
-        <div class="col-xs-4"></div>
+      <div class="row seasons">
+        <div class="seasonsOptions col-md-offset-2 col-md-4 col-xs-6" val="summer">
+          <img src="images/Seasons/ete.png" alt="été">
+          <p class="seasonName">été</p>
+        </div>
+        <div class="seasonsOptions col-xs-6 col-md-4" val="automn">
+          <img src="images/Seasons/automne.png" alt="automne">
+          <p class="seasonName">automne</p>
+        </div>
+        <div class="seasonsOptions col-md-offset-2 col-md-4 col-xs-6" val="winter">
+          <img src="images/Seasons/hiver.png" alt="hiver">
+          <p class="seasonName">hiver</p>
+        </div>
+        <div class="seasonsOptions col-xs-6 col-md-4" val="spring">
+          <img src="images/Seasons/printemps.png" alt="printemps">
+          <p class="seasonName">printemps</p>
+        </div>
+      </div>
+
+      <div class="answer">
+        <div class="alert alert-success">
+          <p><strong>Bravo</strong>, l'ail est un légume d été, printemps, automne, hiver</p>
+        </div>
+
+        <div class="correctAnswer">
+          <p>L'ail est un légume d été, printemps, automne, hiver</p>
+          <p>A consommer sans modération les mois suivants :</p>
+          <div class="month-title january"></div>
+        </div>
+
+        <div class="nextButton col-xs-3">
+          <button class="btn next-button">Suivant</button>
+          <div class="col-xs-4"></div>
+        </div>
       </div>
 
     </div>
@@ -75,7 +83,7 @@
   </div>
 
   <footer class="row">
-    <p>*Mode de calcul du score :</p>
+    <p>Mentions légales</p>
   </footer>
 
 </body>
@@ -87,6 +95,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.16.4/lodash.js"></script>
 <script src="foodLibrary.js"></script>
 <script src="SeasonGame.js"></script>
+<script src="gamePlay.js"></script>
 <script src="index.js"></script>
 
 </html>

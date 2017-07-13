@@ -38,12 +38,14 @@ SeasonGame.prototype.init = function () {
       console.log("You're a star");
       $('.answerWrong').hide();
       $('.answerRight').show();
+      $('.answer').css('background-color','rgba(144, 238, 144, 0.5)');
       that.score += points;
     }
     else {
       console.log("Too bad");
       $('.answerRight').hide();
       $('.answerWrong').show();
+      $('.answer').css('background-color','rgba(255, 65, 0, 0.4)');
     }
     $('.points').text(that.score);
     $('.answer').show();

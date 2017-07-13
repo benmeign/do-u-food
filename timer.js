@@ -13,7 +13,6 @@ function Timer (time,callback) {
 }
 
 function millisecondsToMinAndSec(time) {
-
     var min = Math.floor(time/1000/60);
     var sec = Math.floor(time/1000%60);
     if (sec<10) {
@@ -22,5 +21,4 @@ function millisecondsToMinAndSec(time) {
   else {
     return min + ":" + sec;
   }
-
 }

@@ -1,33 +1,26 @@
-var SeasonGame = function() {
-  this.vegetablesList = _.shuffle(vegetables);
-  this.selectedVegetable = null;
-  this.score = 0;
+var SeasonGame = function(duration = 9000) {
+  this.duration = duration;
+  // this.play();
   this.init();
 };
 
-// SeasonGame.prototype.init = function () {
-//
-//   var time = Date.now();
-//   var running = setInterval(run, 10);
-//
-//   setTimeout(function() {
-//     clearInterval(running);
-//     alert('Game over!');
-//   }, 30000);
+
+SeasonGame.prototype.loadVegetable = function() {
+  var selectedVegetable = this.vegetablesList[0];
+  $('#vegetableImage').attr('src', 'images/FruitsVegetables/'+ selectedVegetable.img);
+  $('#vegetableImage').attr('alt', selectedVegetable.name);
+  $('#vegetableName').text(selectedVegetable.name);
+  $(".foodGame").show();
+  $('.answer').hide();
+  $('.instructions').hide();
+  $(".gameOver").hide();
+  this.vegetablesList.splice(0,1);
+  this.selectedVegetable = selectedVegetable;
+};
+
+SeasonGame.prototype.init = function () {
 
   var that = this;
-
-  var loadVegetable = function() {
-    var selectedVegetable = that.vegetablesList[0];
-    $('#vegetableImage').attr('src', 'images/FruitsVegetables/'+ selectedVegetable.img);
-    $('#vegetableImage').attr('alt', selectedVegetable.name);
-    $('#vegetableName').text(selectedVegetable.name);
-    $(".foodGame").show();
-    $('.answer').hide();
-    $('.instructions').hide();
-    that.vegetablesList.splice(0,1);
-    that.selectedVegetable = selectedVegetable;
-  };
 
   var isAnswerCorrect = function(){
     var points = that.selectedVegetable.difficultyRange;
@@ -57,12 +50,25 @@ var SeasonGame = function() {
     $('.next-button').show();
   };
 
-  $(".start-button").click(loadVegetable);
+  // $(".start-button").click(loadVegetable);
+  // $(".replay").click(loadVegetable);
   $(".seasonsOptions").click(isAnswerCorrect);
-  // setTimeout(function() { prompt("You're a star"); }, 1);
-  $(".next-button").click(loadVegetable);
+  $(".next-button").click(function(){
+    that.loadVegetable();
+  });
 };
 
+SeasonGame.prototype.play = function () {
+    var timer = new Timer(this.duration,function(){
+      $(".gameOver").show();
+    });
+
+    this.score = 0;
+    $('.points').text(this.score);
+    this.vegetablesList = _.shuffle(vegetables);
+    this.selectedVegetable = null;
+    this.loadVegetable();
+};
 
 
 var sumOfArray = function(array,indexStart,indexEnd) {

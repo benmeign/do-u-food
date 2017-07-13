@@ -1,5 +1,5 @@
 body {
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Oxygen', sans-serif !important;
   font-size: 16px ;
   color: #606060;
 }
@@ -8,8 +8,13 @@ header {
   margin: 0 20px 20px 20px;
   margin-right: 20px;
   margin-bottom: 20px;
-  padding-:20px;
-  background-image: src="images/allVegies.jpg";
+  padding:20px;
+  background-image: url(images/allVeggies.jpg);
+  background-size:
+}
+
+.game-title{
+  color: white;
 }
 
 .btn{
@@ -28,7 +33,7 @@ header {
   margin-bottom: 20px;
   width: 150px;
   display: block;
-  margin: auto;
+  margin-top: 40px;
 }
 
 .instructions {
@@ -61,6 +66,20 @@ header {
   text-align: center;
 }
 
+
+.gameOver{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  text-align: center;
+}
+
 .score {
   text-align: right;
 }
@@ -70,7 +89,7 @@ header {
 }
 
 #vegetableImage{
-  height: 200px;
+  height: 180px;
 }
 
 .seasonsOptions, .foodGameContent{
@@ -79,4 +98,5 @@ header {
 
 footer{
   text-align: center;
+  padding: 50px;
 }

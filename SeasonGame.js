@@ -5,7 +5,15 @@ var SeasonGame = function() {
   this.init();
 };
 
-SeasonGame.prototype.init = function () {
+// SeasonGame.prototype.init = function () {
+//
+//   var time = Date.now();
+//   var running = setInterval(run, 10);
+//
+//   setTimeout(function() {
+//     clearInterval(running);
+//     alert('Game over!');
+//   }, 30000);
 
   var that = this;
 
@@ -35,13 +43,18 @@ SeasonGame.prototype.init = function () {
     (seasonVal === "summer" && isSummerCorrect) ||
     (seasonVal === "automn" && isAutomnCorrect)) {
       console.log("You're a star");
+      $('.answerWrong').hide();
+      $('.answerRight').show();
       that.score += points;
     }
     else {
       console.log("Too bad");
+      $('.answerRight').hide();
+      $('.answerWrong').show();
     }
     $('.points').text(that.score);
     $('.answer').show();
+    $('.next-button').show();
   };
 
   $(".start-button").click(loadVegetable);

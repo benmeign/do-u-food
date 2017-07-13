@@ -20,6 +20,10 @@ header {
   padding-left: 15px;
 }
 
+.question{
+  font-size: 24px;
+}
+
 .start-button{
   margin-bottom: 20px;
   width: 150px;
@@ -28,7 +32,7 @@ header {
 }
 
 .instructions {
-  padding: 15px;
+  padding: 40px 60px 40px 60px;
   background-color: #FEFE84;
 }
 

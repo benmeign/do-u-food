@@ -16,7 +16,7 @@
       <h1 class="game-title">Do You Food?</h1>
       <div class="instructions">
         <div class="game-description">
-          <p>Quelle est la saison <b>en France</b> de chacun des fruits ou légumes proposés ?</p>
+          <p class="question">Quelle est la saison <b>en France</b> de chacun des fruits ou légumes proposés ?</p>
           <p>Clique sur la réponse de ton choix (plusieurs réponses peuvent être acceptées pour certains fruits et légumes).</p>
           <p>L'objectif est de répondre à un maximum de questions en 2 minutes.</p>
           <p>Vous recevrez un nombre de points en fonction de la difficulté de la question et la pertinence de la réponse.</p>
@@ -64,14 +64,18 @@
       </div>
 
       <div class="answer">
-        <div class="alert alert-success">
-          <p><strong>Bravo</strong>, l'ail est un légume d été, printemps, automne, hiver</p>
+
+        <div class="alert alert-success answerStatus answerRight">
+          <p><strong>Bravo</strong></p>
+        </div>
+
+        <div class="alert alert-warning answerStatus answerWrong">
+          <p><strong>Dommage</strong></p>
         </div>
 
         <div class="correctAnswer">
           <p>L'ail est un légume d été, printemps, automne, hiver</p>
           <p>A consommer sans modération les mois suivants :</p>
-          <div class="month-title january"></div>
         </div>
 
         <div class="nextButton">

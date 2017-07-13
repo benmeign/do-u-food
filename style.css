@@ -22,16 +22,18 @@ header {
 
 .start-button{
   margin-bottom: 20px;
+  width: 150px;
+  display: block;
+  margin: auto;
 }
 
 .instructions {
-  padding-top: 10px;
-  padding-left: 15px;
+  padding: 15px;
   background-color: #FEFE84;
 }
 
 .container{
-  display: none;
+  position:relative;
 }
 
 .game-details{
@@ -44,9 +46,15 @@ header {
 
 .answer{
   position: absolute;
+  top: 0;
   width: 100%;
-  background-color: #FEFE84;
-  opacity: 0.6;
+  height: 100%;
+  background-color: rgba(254, 254, 132, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  text-align: center;
 }
 
 .score {

@@ -12,27 +12,29 @@
 
 <body>
 
-  <header class="row container-fluid">
+  <header class="container">
       <h1 class="game-title">Do You Food?</h1>
       <div class="instructions">
-        <div class="col-sm-8 game-description">
+        <div class="game-description">
           <p>Quelle est la saison <b>en France</b> de chacun des fruits ou légumes proposés ?</p>
           <p>Clique sur la réponse de ton choix (plusieurs réponses peuvent être acceptées pour certains fruits et légumes).</p>
           <p>L'objectif est de répondre à un maximum de questions en 2 minutes.</p>
           <p>Vous recevrez un nombre de points en fonction de la difficulté de la question et la pertinence de la réponse.</p>
         </div>
-        <button class="btn col-sm-3 start-button">Démarrer</button>
+        <div class="start-button">
+          <button class="btn" class="text-center">Démarrer</button>
+        </div>
       </div>
   </header>
 
-  <div class="container">
+  <div class="container foodGame">
 
-    <div class="row gameDetails">
-      <div class="timer col-xs-6">00:00</div>
-      <div class="score col-xs-6">
-        <span>Score : </span>
-        <span class="points">0</span>
-    </div>
+      <div class="row gameDetails">
+        <div class="timer col-xs-6">00:00</div>
+        <div class="score col-xs-6">
+          <span>Score : </span>
+          <span class="points">0</span>
+      </div>
 
     <div class="foodGamePlayground">
       <div class="row foodGameContent">
@@ -72,9 +74,8 @@
           <div class="month-title january"></div>
         </div>
 
-        <div class="nextButton col-xs-3">
+        <div class="nextButton">
           <button class="btn next-button">Suivant</button>
-          <div class="col-xs-4"></div>
         </div>
       </div>
 

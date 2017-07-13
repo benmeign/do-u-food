@@ -1,26 +1,28 @@
 var SeasonGame = function() {
   this.vegetablesList = _.shuffle(vegetables);
   this.selectedVegetable = null;
-  this.init();
   this.score = 0;
+  this.init();
 };
 
 SeasonGame.prototype.init = function () {
 
   var that = this;
-  $(".next-button").click(function() {
+
+  var loadVegetable = function() {
     var selectedVegetable = that.vegetablesList[0];
     $('#vegetableImage').attr('src', 'images/FruitsVegetables/'+ selectedVegetable.img);
     $('#vegetableImage').attr('alt', selectedVegetable.name);
     $('#vegetableName').text(selectedVegetable.name);
+    $(".foodGame").show();
+    $('.answer').hide();
+    $('.instructions').hide();
     that.vegetablesList.splice(0,1);
     that.selectedVegetable = selectedVegetable;
-  });
+  };
 
-  $(".seasonsOptions").click(function(){
-    that.selectedVegetable.months;
+  var isAnswerCorrect = function(){
     var points = that.selectedVegetable.difficultyRange;
-    that.score;
     var seasonVal = $(this).attr("val");
 
     var isWinterCorrect = (sumOfArray(that.selectedVegetable.months,0,2)>=1);
@@ -29,24 +31,31 @@ SeasonGame.prototype.init = function () {
     var isAutomnCorrect = (sumOfArray(that.selectedVegetable.months,9,11)>=1);
 
     if ((seasonVal === "winter" && isWinterCorrect) ||
-          (seasonVal === "spring" && isSpringCorrect)  ||
-          (seasonVal === "summer" && isSummerCorrect) ||
-          (seasonVal === "automn" && isAutomnCorrect)) {
-            console.log("You're a star");
-            // setTimeout(function() { prompt("You're a star"); }, 1);
-            that.score += points;
-          }
-          else {
-            console.log("Too bad");
+    (seasonVal === "spring" && isSpringCorrect)  ||
+    (seasonVal === "summer" && isSummerCorrect) ||
+    (seasonVal === "automn" && isAutomnCorrect)) {
+      console.log("You're a star");
+      that.score += points;
+    }
+    else {
+      console.log("Too bad");
     }
     $('.points').text(that.score);
-  });
+    $('.answer').show();
+  };
+
+  $(".start-button").click(loadVegetable);
+  $(".seasonsOptions").click(isAnswerCorrect);
+  // setTimeout(function() { prompt("You're a star"); }, 1);
+  $(".next-button").click(loadVegetable);
 };
+
+
 
 var sumOfArray = function(array,indexStart,indexEnd) {
   var sum = 0;
   for(var i = indexStart; i<=indexEnd; i++) {
-      sum += array[i];
+    sum += array[i];
   }
   return sum;
 };

@@ -1,6 +1,5 @@
 var SeasonGame = function(duration = 9000) {
   this.duration = duration;
-  // this.play();
   this.init();
 };
 
@@ -39,6 +38,8 @@ SeasonGame.prototype.init = function () {
       $('.answerWrong').hide();
       $('.answerRight').show();
       $('.answer').css('background-color','rgba(144, 238, 144, 0.5)');
+      $('.vegetableName').text(that.selectedVegetable.name);
+      // $('.correctSeason').text(that.selectedVegetable.season);
       that.score += points;
     }
     else {
@@ -46,14 +47,15 @@ SeasonGame.prototype.init = function () {
       $('.answerRight').hide();
       $('.answerWrong').show();
       $('.answer').css('background-color','rgba(255, 65, 0, 0.4)');
+      $('.vegetableName').text(that.selectedVegetable.name);
+      // $('.correctSeason').text(that.selectedVegetable.season);
     }
+
     $('.points').text(that.score);
     $('.answer').show();
     $('.next-button').show();
   };
 
-  // $(".start-button").click(loadVegetable);
-  // $(".replay").click(loadVegetable);
   $(".seasonsOptions").click(isAnswerCorrect);
   $(".next-button").click(function(){
     that.loadVegetable();

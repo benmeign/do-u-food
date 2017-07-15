@@ -10,6 +10,9 @@ function Timer (time,callback) {
       clearInterval(that.interval);
     }
   },100);
+  this.pause = function() {
+    clearInterval(that.time);
+  };
 }
 
 function millisecondsToMinAndSec(time) {
@@ -22,3 +25,7 @@ function millisecondsToMinAndSec(time) {
     return min + ":" + sec;
   }
 }
+//
+// function pauseTimer() {
+//   clearInterval(that.time);
+// }

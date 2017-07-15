@@ -37,18 +37,22 @@ SeasonGame.prototype.init = function () {
       console.log("You're a star");
       $('.answerWrong').hide();
       $('.answerRight').show();
-      $('.answer').css('background-color','rgba(144, 238, 144, 0.5)');
+      $('.answer').css('background-color','rgba(144, 238, 144, 1)');
       $('.vegetableName').text(that.selectedVegetable.name);
-      // $('.correctSeason').text(that.selectedVegetable.season);
+      $('.vegetableImage').attr('src', 'images/FruitsVegetables/'+ that.selectedVegetable.img);
+      $('.rightMessage').text(_.sample(win));
+      $('.correctSeason').text(that.selectedVegetable.season);
       that.score += points;
     }
     else {
       console.log("Too bad");
       $('.answerRight').hide();
       $('.answerWrong').show();
-      $('.answer').css('background-color','rgba(255, 65, 0, 0.4)');
+      $('.answer').css('background-color','rgba(251, 137, 137, 0.99)');
       $('.vegetableName').text(that.selectedVegetable.name);
-      // $('.correctSeason').text(that.selectedVegetable.season);
+      $('.vegetableImage').attr('src', 'images/FruitsVegetables/'+ that.selectedVegetable.img);
+      $('.wrongMessage').text(_.sample(lose));
+      $('.correctSeason').text(that.selectedVegetable.season);
     }
 
     $('.points').text(that.score);
@@ -72,6 +76,8 @@ SeasonGame.prototype.play = function () {
     this.vegetablesList = _.shuffle(vegetables);
     this.selectedVegetable = null;
     this.loadVegetable();
+    // $(".seasonsOptions").click(timer.pause);
+
 };
 
 

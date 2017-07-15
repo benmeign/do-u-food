@@ -18,12 +18,21 @@
       <div class="instructions">
         <div class="game-description">
           <p class="question">Quelle est la saison <b>en France</b> de chacun de ces fruits et légumes ?</p>
-          <p>Clique sur la réponse de ton choix (plusieurs réponses peuvent être acceptées pour certains fruits et légumes).</p>
-          <p>L'objectif est de répondre à un maximum de questions en 2 minutes.</p>
-          <p>Vous recevrez un nombre de points en fonction de la difficulté de la question et la pertinence de la réponse.</p>
+          <p>Clique sur la réponse de ton choix (plusieurs réponses possibles).</p>
+          <p>Réponds à un maximum de questions en <b>1 minute.</b></p>
+          <p>Les points sont attribués selon le niveau de difficulté.</p>
+          <p>Petit rappel :
+          <ul>
+              <li>été : juillet, août, septembre</li>
+              <li>automne : octobre, novembre, décembre</li>
+              <li>hiver : janvier, février, mars</li>
+              <li>printemps : avril, mai, juin</li>
+          </ul>
+        </p>
+
         </div>
         <div class="start-button">
-          <button class="btn" class="text-center">Démarrer</button>
+          <button class="btn" class="text-center">C'est parti !</button>
         </div>
       </div>
   </header>
@@ -42,7 +51,7 @@
       <div class="row foodGameContent">
         <div class="col-sm-12">
           <img id="vegetableImage" src="images/allVeggies.jpg" alt="ail">
-          <p id="vegetableName">Légume</p>
+          <p id="vegetableName"><strong>Légume</strong></p>
         </div>
       </div>
 
@@ -67,15 +76,16 @@
 
       <div class="answer">
         <div class="alert alert-success answerStatus answerRight">
-          <p><strong>Bravo</strong></p>
+          <p class="rightMessage"><strong>Bravo</strong></p>
         </div>
 
         <div class="alert alert-warning answerStatus answerWrong">
-          <p><strong>Dommage</strong></p>
+          <p class="wrongMessage"><strong>Dommage</strong></p>
         </div>
 
         <div class="correctAnswer">
-          <p class="vegetableName">Légume</p>
+          <img class="vegetableImage" src="images/allVeggies.jpg" alt="ail">
+          <p class="vegetableName"><strong>Légume</strong></p>
           <p>A consommer sans modération :</p>
           <p class="correctSeason">de XXX à XXX</p>
         </div>

@@ -10,7 +10,7 @@ header {
   margin-bottom: 20px;
   padding:20px;
   background-image: url(images/allVeggies.jpg);
-  background-size:
+  background-size: 100%;
 }
 
 .game-title{
@@ -20,6 +20,9 @@ header {
 
 .btn{
   margin-bottom: 15px;
+  background-color: white;
+  width: 150px;
+  font-size: 18px !important;
 }
 
 .question{
@@ -31,6 +34,7 @@ header {
   width: 150px;
   display: block;
   margin-top: 40px;
+  margin-left: 60px;
 }
 
 .instructions {
@@ -51,6 +55,14 @@ header {
   position:relative;
 }
 
+#vegetableName, .vegetableName {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.seasonName {
+  font-size: 18px;
+}
+
 .answer{
   position: absolute;
   top: 0;
@@ -64,6 +76,23 @@ header {
   text-align: center;
 }
 
+.alert-success{
+  background-color: #1eb81e !important;
+  color: white !important;
+  font-size: 18px;
+}
+
+.alert-warning{
+  background-color: #fc1b1b !important;
+  color: white !important;
+  font-size: 18px;
+}
+
+
+.alert {
+  border-radius: 0px !important;
+  border: none !important;
+}
 
 .gameOver{
   position: absolute;
@@ -90,16 +119,25 @@ header {
   font-size: 20px;
 }
 
-.seasons img{
+.seasons img {
   width: 90px;
 }
 
-#vegetableImage{
+#vegetableImage {
   height: 180px;
+}
+
+.vegetableImage {
+  height: 120px;
 }
 
 .seasonsOptions, .foodGameContent{
   text-align: center;
+}
+
+.correctSeason {
+  padding-bottom: 20px;
+  font-size: 18px;
 }
 
 .finalMessage {

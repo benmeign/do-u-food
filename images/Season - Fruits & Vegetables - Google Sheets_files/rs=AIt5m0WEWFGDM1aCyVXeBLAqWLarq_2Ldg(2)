@@ -1,0 +1,12 @@
+/* _GlobalPrefix_ */
+/* _Module_:t */
+try{
+var ra;
+if(window.jstiming){window.jstiming.pj={};window.jstiming.cr=1;var sa=function(a,b,c){var d=a.t[b],e=a.t.start;if(d&&(e||c))return d=a.t[b][0],void 0!=c?e=c:e=e[0],Math.round(d-e)};window.jstiming.getTick=sa;window.jstiming.getLabels=function(a){var b=[],c;for(c in a.t)b.push(c);return b};var ta=function(a,b,c){var d,e="";window.jstiming.srt&&(e+="&srt="+window.jstiming.srt);window.jstiming.pt&&(e+="&tbsrt="+window.jstiming.pt);try{window.external&&window.external.tran?e+="&tran="+window.external.tran:window.gtbExternal&&
+window.gtbExternal.tran?e+="&tran="+window.gtbExternal.tran():window.chrome&&window.chrome.csi&&(e+="&tran="+window.chrome.csi().tran)}catch(r){}if(d=window.chrome)if(d=d.loadTimes){d().wasFetchedViaSpdy&&(e+="&p=s");if(d().wasNpnNegotiated){e+="&npn=1";var f=d().npnNegotiatedProtocol;f&&(e+="&npnv="+(encodeURIComponent||escape)(f))}d().wasAlternateProtocolAvailable&&(e+="&apa=1")}var h=a.t,k=h.start;f=[];d=[];for(var l in h)if("start"!=l&&0!=l.indexOf("_")){var p=h[l][1];p?h[p]&&d.push(l+"."+sa(a,
+l,h[p][0])):k&&f.push(l+"."+sa(a,l))}if(b)for(var q in b)e+="&"+q+"="+b[q];(b=c)||(b="https:"==document.location.protocol?"https://csi.gstatic.com/csi":"http://csi.gstatic.com/csi");return[b,"?v=3","&s="+(window.jstiming.sn||"common_sharing")+"&action=",a.name,d.length?"&it="+d.join(","):"",e,"&rt=",f.join(",")].join("")},ua=function(a,b,c){a=ta(a,b,c);if(!a)return"";b=new Image;var d=window.jstiming.cr++;window.jstiming.pj[d]=b;b.onload=b.onerror=function(){window.jstiming&&delete window.jstiming.pj[d]};
+b.src=a;b=null;return a};ra=function(a,b,c){if("prerender"==document.webkitVisibilityState)return!1;ua(a,b,c);return!0};window.jstiming.report=function(a,b,c){if("prerender"==document.webkitVisibilityState){var d=!1,e=function(){d||(b?b.prerender="1":b={prerender:"1"},ra(a,b,c)&&(d=!0,document.removeEventListener("webkitvisibilitychange",e,!1)))};document.addEventListener("webkitvisibilitychange",e,!1);return""}return ua(a,b,c)}};
+
+}catch(e){_DumpException(e)}
+/* _GlobalSuffix_ */
+// Google Inc.

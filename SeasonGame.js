@@ -40,9 +40,10 @@ SeasonGame.prototype.init = function () {
       $('.answer').css('background-color','rgba(144, 238, 144, 1)');
       $('.vegetableName').text(that.selectedVegetable.name);
       $('.vegetableImage').attr('src', 'images/FruitsVegetables/'+ that.selectedVegetable.img);
-      $('.rightMessage').text(_.sample(win));
+      // $('.rightMessage').text(_.sample(win));
       $('.correctSeason').text(that.selectedVegetable.season);
       that.score += points;
+      // if (this.score =< 10) { consolelog('Bou')};
     }
     else {
       console.log("Too bad");
@@ -71,12 +72,13 @@ SeasonGame.prototype.play = function () {
       $(".gameOver").show();
     });
 
+    $(".seasonsOptions").click(timer.isPaused);
+
     this.score = 0;
     $('.points').text(this.score);
     this.vegetablesList = _.shuffle(vegetables);
     this.selectedVegetable = null;
     this.loadVegetable();
-    // $(".seasonsOptions").click(timer.pause);
 
 };
 

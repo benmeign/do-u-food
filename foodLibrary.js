@@ -62,7 +62,7 @@ var vegetables = [
   {name: 'Orange',      img: 'orange.jpg',       months:[1,1,0,0,0,0,0,0,0,0,1,1],     difficultyRange: 1,     season: 'de novembre à février',},
   {name: 'Pamplemousse',      img: 'pamplemousse.jpg',       months:[1,1,1,0,0,0,0,0,0,0,0,1],     difficultyRange: 2,     season: 'de décembre à mars',},
   {name: 'Panais',      img: 'panais.jpg',       months:[1,1,1,0,0,0,0,0,1,1,1,1],     difficultyRange: 2,     season: 'de septembre à mars',},
-  {name: 'Pastèque',      img: 'pastèque.jpg',       months:[0,0,0,0,0,1,1,1,1,0,0,0],     difficultyRange: 1,     season: 'de juin à septembre',},
+  {name: 'Pastèque',      img: 'pasteque.jpg',       months:[0,0,0,0,0,1,1,1,1,0,0,0],     difficultyRange: 1,     season: 'de juin à septembre',},
   {name: 'Pâtisson',      img: 'patisson.jpg',       months:[0,0,0,0,0,0,1,1,1,0,0,0],     difficultyRange: 4,     season: 'de juillet à septembre',},
   {name: 'Pêche',      img: 'peche.jpg',       months:[0,0,0,0,0,1,1,1,1,0,0,0],     difficultyRange: 1,     season: 'de juin à septembre',},
   {name: 'Petit oignon blanc',      img: 'petit-oignon-blanc.jpg',       months:[0,0,1,1,1,1,1,1,1,1,0,0],     difficultyRange: 1,     season: 'de mars à octobre',},
@@ -90,3 +90,5 @@ var vegetables = [
 var win = ["T'es trop fort","Tu cartonnes","Youpi","Yallah!","Bravo !","T'es une star","Amaaaziiing!","C'est tout bon !","Super !","Excellent !","Hip hip hip hourraaaAA !"];
 
 var lose = ["Aïe","Dommage","Il va falloir réviser un peu...","Non, non, non !","C'est pas ça","Raté","Tu peux mieux faire !","Essaie encore !", "On y croit, tu vas y arriver", "Oups", "Continue à t'entraîner"];
+
+var scoreGradeMessage = ["Il va falloir réviser","Bon début, encore des progrès à faire, on y croit !","Bien, bien, tu connais ton sujet !","Waouh ! T'es une super star, tu m'invites quand à dîner ?"];

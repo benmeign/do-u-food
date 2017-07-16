@@ -58,6 +58,7 @@ header {
 #vegetableName, .vegetableName {
   font-size: 18px;
   padding-bottom: 20px;
+  padding-top: 10px;
 }
 .seasonName {
   font-size: 18px;
@@ -87,7 +88,6 @@ header {
   color: white !important;
   font-size: 18px;
 }
-
 
 .alert {
   border-radius: 0px !important;
@@ -120,7 +120,9 @@ header {
 }
 
 .seasons img {
-  width: 90px;
+  width: 80px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 #vegetableImage {

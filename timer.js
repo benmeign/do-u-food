@@ -20,9 +20,6 @@ function Timer (time,callback) {
 }
 
 
-// - Propriété `this.isPaused` de `Timer` par défaut à `false`
-// - méthode `setPause = function(isPaused)` qui permet de mettre en pause ou non le timer
-// - Je rajouterai une condition `if (that.isPaused)` quand tu fais `that.time -= 100`
 
 function millisecondsToMinAndSec(time) {
     var min = Math.floor(time/1000/60);
@@ -34,7 +31,3 @@ function millisecondsToMinAndSec(time) {
     return min + ":" + sec;
   }
 }
-//
-// function pauseTimer() {
-//   clearInterval(that.time);
-// }

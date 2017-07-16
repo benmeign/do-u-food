@@ -27,4 +27,7 @@
       Unsolved problems:
         - I would like to pause the timer once the player clicks on 1 option so as for him to have time to read the answer > I didn't manage to do so
         - I would like to restructure the SeasonGame.js file to have it cleaner
-        - I would like to add some fruits and vegetables that are not cultivated in France so as to add an option "This is never the season in France", if a user gets wrong to these, the score goes down to zero
+        - I would like to change the message of the game depending on the final score. (<10, 10-20, 20-30, >30)
+        - I would like to add randomn smileys to the right or wrong answers options
+        - I would like to add some fruits and vegetables that are not cultivated in France so as to add an option "This is never the season in France", if a user gets wrong to these, the score goes down to zero.
+        - I would like to save the scores in a database and have a ranking of all players after each session, each player entering her/his name and displaying the Top 3 scores.

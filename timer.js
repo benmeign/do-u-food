@@ -3,9 +3,9 @@ function Timer (time,callback) {
   this.time = time;
   var that = this;
   this.interval = setInterval(function(){
-    that.time -= 100;
-    if(that.isPaused){
-      clearInterval(that.time);
+    if(!that.isPaused){
+      that.time -= 100;
+      // clearInterval(that.time);
     }
     $(".timer").text(millisecondsToMinAndSec(that.time));
     if (that.time <=0){
@@ -14,10 +14,14 @@ function Timer (time,callback) {
     }
   },100);
   this.isPaused = false;
-  var setPause = function(isPaused){
-    $(".seasonsOptions").click(this.isPaused);
-  };
+  // var setPause = function(isPaused){
+  //   $(".seasonsOptions").click(this.isPaused);
+  // };
 }
+
+Timer.prototype.setPause = function(isPaused) {
+  this.isPaused = isPaused;
+};
 
 
 
